@@ -40,7 +40,6 @@
                              options:NSLayoutFormatAlignAllBottom
                              metrics:nil
                              views:@{@"scanRect": _scanRect}]];
-  [_scanRect startAnimating];
     self.scanner = [[MTBBarcodeScanner alloc] initWithPreviewView:_previewView];
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(cancel)];
   [self updateFlashButton];
