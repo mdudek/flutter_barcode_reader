@@ -13,6 +13,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    UINavigationBar *bar = [self.navigationController navigationBar];
+    bar.titleTextAttributes 
+         = @{UITextAttributeTextColor : [UIColor colorWithRed:0.98 green:0.87 blue:0.07 alpha:1.0]};
+    bar.backgroundColor = [UIColor colorWithRed:0.13 green:0.13 blue:0.14 alpha:1.0];
+    bar.tintColor = [UIColor colorWithRed:0.13 green:0.13 blue:0.14 alpha:1.0];
+    bar.translucent = NO;
     self.previewView = [[UIView alloc] initWithFrame:self.view.bounds];
     self.previewView.translatesAutoresizingMaskIntoConstraints = NO;
     [self.view addSubview:_previewView];
