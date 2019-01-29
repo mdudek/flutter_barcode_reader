@@ -70,7 +70,7 @@
     CGFloat scanRectHeight = scanRectWidth * heightMultiplier;
     CGFloat scanRectOriginX = (rect.size.width / 2) - (scanRectWidth / 2);
     CGFloat scanRectOriginY = (rect.size.height / 2) - (scanRectHeight / 2);
-    return CGRectMake(scanRectOriginX, scanRectOriginY, scanRectWidth, scanRectHeight);
+    return CGRectMake(scanRectOriginX, scanRectOriginY/2, scanRectWidth, scanRectHeight);
   }
 
 @end
