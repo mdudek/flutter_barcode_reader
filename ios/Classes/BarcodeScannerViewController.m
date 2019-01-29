@@ -8,6 +8,13 @@
 
 
 @implementation BarcodeScannerViewController {
+    -(id) initWithTheme:(NSString *)theme_ {
+        self = [super init];
+        if (self) {
+            self.theme = theme_;
+        }
+        return self;
+    }
 }
 
 

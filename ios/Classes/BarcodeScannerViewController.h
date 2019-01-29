@@ -17,14 +17,5 @@
 @property(nonatomic, weak) NSString *theme;
 
   
-  -(id) initWithOptions:(NSDictionary *) options;
-
-    -(id)initWithTheme:(NSString *)theme_
-    {
-        self = [super init];
-        if (self) {
-            self.theme = theme_;
-        }
-        return self;
-    }
+  -(id)initWithTheme:(NSString *)theme_∂;
 @end
