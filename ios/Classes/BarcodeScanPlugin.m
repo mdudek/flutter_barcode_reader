@@ -12,15 +12,24 @@
 
 - (void)handleMethodCall:(FlutterMethodCall *)call result:(FlutterResult)result {
     if ([@"scan" isEqualToString:call.method]) {
+        NSDictionary *arguments = [call arguments];
+        NSString *theme = arguments[@"theme"];
+        if (theme.length == 0) {
+            result([FlutterError errorWithCode:@"error"
+                                       message:@"Non-empty theme expected"
+                                       details:nil]);
+            return;
+        }
+
         self.result = result;
-        [self showBarcodeView];
+        [self showBarcodeView:theme];
     } else {
         result(FlutterMethodNotImplemented);
     }
 }
 
-- (void)showBarcodeView {
-    BarcodeScannerViewController *scannerViewController = [[BarcodeScannerViewController alloc] init];
+- (void)showBarcodeView:(NSString *)theme {
+    BarcodeScannerViewController *scannerViewController = [[BarcodeScannerViewController alloc] initWithTheme:theme];
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:scannerViewController];
     scannerViewController.delegate = self;
     [self.hostViewController presentViewController:navigationController animated:NO completion:nil];
