@@ -14,8 +14,7 @@
   @property(nonatomic, retain) ScannerOverlay *scanRect;
 @property(nonatomic, retain) MTBBarcodeScanner *scanner;
 @property(nonatomic, weak) id<BarcodeScannerViewControllerDelegate> delegate;
-@property(nonatomic, weak) NSString *theme;
+@property(copy, nonatomic) NSString *theme;
 
-  
-  -(id)initWithTheme:(NSString *)theme_;
+-(id)initWithTheme:(NSString *)theme;
 @end
