@@ -17,5 +17,5 @@
 @property(nonatomic, weak) NSString *theme;
 
   
-  -(id)initWithTheme:(NSString *)theme_∂;
+  -(id)initWithTheme:(NSString *)theme_;
 @end
