@@ -9,9 +9,6 @@ import io.flutter.plugin.common.MethodChannel.Result
 import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.PluginRegistry
 import io.flutter.plugin.common.PluginRegistry.Registrar
-import jdk.nashorn.internal.objects.NativeFunction.call
-
-
 
 class BarcodeScanPlugin(val activity: Activity): MethodCallHandler,
     PluginRegistry.ActivityResultListener {
