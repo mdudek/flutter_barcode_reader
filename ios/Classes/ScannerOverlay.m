@@ -18,6 +18,15 @@
     return self;
   }
 
+    -(id)initWithFrameAndTheme:(CGRect)frame theme:(UIColor *)cornerColor
+    {
+        self = [super initWithFrame:frame];
+        if (self) {
+            self.cornerColor = cornerColor;
+        }
+        return self;
+    }
+
 - (void)drawRect:(CGRect)rect {
   CGContextRef context = UIGraphicsGetCurrentContext();
   
@@ -58,7 +67,7 @@
   [path addLineToPoint:CGPointMake(holeRect.origin.x, bottomHoleY - cornerSize)];
   
   path.lineWidth = 2;
-  [[UIColor colorWithRed:0.98 green:0.87 blue:0.07 alpha:1.0] setStroke];
+  [self.cornerColor setStroke];
   [path stroke];
   
 }
