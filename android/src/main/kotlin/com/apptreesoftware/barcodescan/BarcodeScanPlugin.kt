@@ -28,6 +28,7 @@ class BarcodeScanPlugin(val activity: Activity): MethodCallHandler,
       if (call.arguments !is Map<*, *>) {
         throw IllegalArgumentException("Map argument expected")
       }
+      this.result = result
       showBarcodeView(call.argument("theme") as? String)
     } else {
       result.notImplemented()
