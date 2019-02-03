@@ -30,6 +30,9 @@
     if ([@"kalium" isEqualToString:self.theme]) {
         barBgColor = [UIColor colorWithRed:0.13 green:0.13 blue:0.14 alpha:1.0];
         primaryColor = [UIColor colorWithRed:0.98 green:0.87 blue:0.07 alpha:1.0];
+    } else if ([@"natrium" isEqualToString:self.theme]) {
+        barBgColor = [UIColor colorWithRed:0.16 green:0.23 blue:0.30 alpha:1.0];
+        primaryColor = [UIColor colorWithRed:0.64 green:0.80 blue:1.00 alpha:1.0];
     } else {
         primaryColor = [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:1.0];
     }
