@@ -62,6 +62,33 @@ class BarcodeScannerActivity : Activity(), ZXingScannerView.ResultHandler {
                 window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
                 window.statusBarColor = 0xFF2A3A4D.toInt()
             }
+        } else if (theme != null && theme.equals("titanium")) {
+            actionBarColor = 0xFF61C6AD.toInt()
+            scannerView.setBorderColor(0xFF61C6AD.toInt())
+            actionBar.setBackgroundDrawable(ColorDrawable(0xFF041920.toInt()))
+            if (android.os.Build.VERSION.SDK_INT >= 21) {
+                window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
+                window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
+                window.statusBarColor = 0xFF041920.toInt()
+            }
+        } else if (theme != null && theme.equals("iridium")) {
+            actionBarColor = 0xFF008F53.toInt()
+            scannerView.setBorderColor(0xFF008F53.toInt())
+            actionBar.setBackgroundDrawable(ColorDrawable(0xFFFFFFFF.toInt()))
+            if (android.os.Build.VERSION.SDK_INT >= 21) {
+                window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
+                window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
+                window.statusBarColor = 0xFFFFFFFF.toInt()
+            }
+        } else if (theme != null && theme.equals("beryllium")) {
+            actionBarColor = 0xFFBDA1FF.toInt()
+            scannerView.setBorderColor(0xFFBDA1FF.toInt())
+            actionBar.setBackgroundDrawable(ColorDrawable(0xFF18181A.toInt()))
+            if (android.os.Build.VERSION.SDK_INT >= 21) {
+                window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
+                window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
+                window.statusBarColor = 0xFF18181A.toInt()
+            }
         }
         setContentView(scannerView)
     }
