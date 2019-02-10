@@ -89,6 +89,24 @@ class BarcodeScannerActivity : Activity(), ZXingScannerView.ResultHandler {
                 window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
                 window.statusBarColor = 0xFF18181A.toInt()
             }
+        } else if (theme != null && theme.equals("ruthium")) {
+            actionBarColor = 0xFFD5727E.toInt()
+            scannerView.setBorderColor(0xFFD5727E.toInt())
+            actionBar.setBackgroundDrawable(ColorDrawable(0xFFFFC9D0.toInt()))
+            if (android.os.Build.VERSION.SDK_INT >= 21) {
+                window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
+                window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
+                window.statusBarColor = 0xFFFFC9D0.toInt()
+            }
+        } else if (theme != null && theme.equals("radium")) {
+            actionBarColor = 0xFF39E289.toInt()
+            scannerView.setBorderColor(0xFF39E289.toInt())
+            actionBar.setBackgroundDrawable(ColorDrawable(0xFF1A0636.toInt()))
+            if (android.os.Build.VERSION.SDK_INT >= 21) {
+                window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
+                window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
+                window.statusBarColor = 0xFF1A0636.toInt()
+            }
         }
         setContentView(scannerView)
     }

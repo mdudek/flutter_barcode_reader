@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/services.dart';
 
-enum OverlayTheme { KALIUM, NATRIUM, IRIDIUM, TITANIUM, BERYLLIUM }
+enum OverlayTheme { KALIUM, NATRIUM, IRIDIUM, TITANIUM, BERYLLIUM, RUTHIUM, RADIUM }
 
 class BarcodeScanner {
   static const CameraAccessDenied = 'PERMISSION_NOT_GRANTED';
@@ -21,6 +21,10 @@ class BarcodeScanner {
       themeStr = "titanium";
     } else if (theme == OverlayTheme.BERYLLIUM) {
       themeStr = "beryllium";
+    } else if (theme == OverlayTheme.RUTHIUM) {
+      themeStr = "ruthium";
+    } else if (theme == OverlayTheme.RADIUM) {
+      themeStr = "radium";
     }
     final Map<String, dynamic> params = <String, dynamic>{
      'theme': themeStr,
