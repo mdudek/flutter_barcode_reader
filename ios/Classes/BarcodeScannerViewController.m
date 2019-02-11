@@ -43,7 +43,7 @@
         barBgColor = [UIColor colorWithRed:1.00 green:1.00 blue:1.00 alpha:1.0];
         primaryColor = [UIColor colorWithRed:0.00 green:0.56 blue:0.33 alpha:1.0];
     } else if ([@"ruthium" isEqualToString:self.theme]) {
-        barBgColor = [UIColor colorWithRed:1.00 green:0.79 blue:0.82 alpha:1.0]
+        barBgColor = [UIColor colorWithRed:1.00 green:0.79 blue:0.82 alpha:1.0];
         primaryColor = [UIColor colorWithRed:0.84 green:0.45 blue:0.49 alpha:1.0];
     } else if ([@"radium" isEqualToString:self.theme]) {
         barBgColor = [UIColor colorWithRed:0.10 green:0.02 blue:0.21 alpha:1.0];
