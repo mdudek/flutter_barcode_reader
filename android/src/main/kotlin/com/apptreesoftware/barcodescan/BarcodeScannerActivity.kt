@@ -48,7 +48,7 @@ class BarcodeScannerActivity : Activity(), ZXingScannerView.ResultHandler {
             actionBarColor = 0xFFFBDD11.toInt()
             scannerView.setBorderColor(0xFFFBDD11.toInt())
             actionBar.setBackgroundDrawable(ColorDrawable(0xFF212124.toInt()))
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.M) {
                 scannerView.setSystemUiVisibility(0);
             }
             if (android.os.Build.VERSION.SDK_INT >= 21) {
@@ -60,7 +60,7 @@ class BarcodeScannerActivity : Activity(), ZXingScannerView.ResultHandler {
             actionBarColor = 0xFFA3CDFF.toInt()
             scannerView.setBorderColor(0xFFA3CDFF.toInt())
             actionBar.setBackgroundDrawable(ColorDrawable(0xFF2A3A4D.toInt()))
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.M) {
                 scannerView.setSystemUiVisibility(0);
             }
             if (android.os.Build.VERSION.SDK_INT >= 21) {
@@ -72,7 +72,7 @@ class BarcodeScannerActivity : Activity(), ZXingScannerView.ResultHandler {
             actionBarColor = 0xFF61C6AD.toInt()
             scannerView.setBorderColor(0xFF61C6AD.toInt())
             actionBar.setBackgroundDrawable(ColorDrawable(0xFF041920.toInt()))
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.M) {
                 scannerView.setSystemUiVisibility(0);
             }
             if (android.os.Build.VERSION.SDK_INT >= 21) {
@@ -84,7 +84,7 @@ class BarcodeScannerActivity : Activity(), ZXingScannerView.ResultHandler {
             actionBarColor = 0xFF008F53.toInt()
             scannerView.setBorderColor(0xFF008F53.toInt())
             actionBar.setBackgroundDrawable(ColorDrawable(0xFFFFFFFF.toInt()))
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.M) {
                 scannerView.setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
             }
             if (android.os.Build.VERSION.SDK_INT >= 21) {
@@ -96,7 +96,7 @@ class BarcodeScannerActivity : Activity(), ZXingScannerView.ResultHandler {
             actionBarColor = 0xFFBDA1FF.toInt()
             scannerView.setBorderColor(0xFFBDA1FF.toInt())
             actionBar.setBackgroundDrawable(ColorDrawable(0xFF18181A.toInt()))
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.M) {
                 scannerView.setSystemUiVisibility(0);
             }
             if (android.os.Build.VERSION.SDK_INT >= 21) {
@@ -108,7 +108,7 @@ class BarcodeScannerActivity : Activity(), ZXingScannerView.ResultHandler {
             actionBarColor = 0xFFD5727E.toInt()
             scannerView.setBorderColor(0xFFD5727E.toInt())
             actionBar.setBackgroundDrawable(ColorDrawable(0xFFFFC9D0.toInt()))
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.M) {
                 scannerView.setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
             }
             if (android.os.Build.VERSION.SDK_INT >= 21) {
@@ -120,7 +120,7 @@ class BarcodeScannerActivity : Activity(), ZXingScannerView.ResultHandler {
             actionBarColor = 0xFF39E289.toInt()
             scannerView.setBorderColor(0xFF39E289.toInt())
             actionBar.setBackgroundDrawable(ColorDrawable(0xFF1A0636.toInt()))
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.M) {
                 scannerView.setSystemUiVisibility(0);
             }
             if (android.os.Build.VERSION.SDK_INT >= 21) {
