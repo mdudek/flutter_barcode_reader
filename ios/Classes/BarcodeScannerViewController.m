@@ -48,6 +48,15 @@
     } else if ([@"radium" isEqualToString:self.theme]) {
         barBgColor = [UIColor colorWithRed:0.10 green:0.02 blue:0.21 alpha:1.0];
         primaryColor = [UIColor colorWithRed:0.22 green:0.89 blue:0.54 alpha:1.0];
+    } else if ([@"indium" isEqualToString:self.theme]) {
+        barBgColor = [UIColor colorWithRed:1.00 green:1.00 blue:1.00 alpha:1.0];
+        primaryColor = [UIColor colorWithRed:0.00 green:0.31 blue:0.73 alpha:1.0];
+    } else if ([@"neptunium" isEqualToString:self.theme]) {
+        barBgColor = [UIColor colorWithRed:0.03 green:0.03 blue:0.25 alpha:1.0];
+        primaryColor = [UIColor colorWithRed:0.29 green:0.56 blue:0.89 alpha:1.0];
+    } else if ([@"thorium" isEqualToString:self.theme]) {
+        barBgColor = [UIColor colorWithRed:0.16 green:0.06 blue:0.32 alpha:1.0];
+        primaryColor = [UIColor colorWithRed:0.46 green:0.95 blue:1.00 alpha:1.0];
     } else {
         primaryColor = [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:1.0];
     }

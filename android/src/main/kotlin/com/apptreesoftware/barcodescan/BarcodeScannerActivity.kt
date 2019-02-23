@@ -19,11 +19,6 @@ import android.R
 import android.graphics.Color
 import android.view.WindowManager
 
-
-
-
-
-
 class BarcodeScannerActivity : Activity(), ZXingScannerView.ResultHandler {
 
     lateinit var scannerView: me.dm7.barcodescanner.zxing.ZXingScannerView
@@ -129,7 +124,43 @@ class BarcodeScannerActivity : Activity(), ZXingScannerView.ResultHandler {
                 window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
                 window.statusBarColor = 0xFF1A0636.toInt()
             }
-        }
+        } else if (theme != null && theme.equals("indium")) {
+            actionBarColor = 0xFF0050BB.toInt()
+            scannerView.setBorderColor(0xFF0050BB.toInt())
+            actionBar.setBackgroundDrawable(ColorDrawable(0xFFFFFFFF.toInt()))
+            if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.M) {
+                scannerView.setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
+            }
+            if (android.os.Build.VERSION.SDK_INT >= 21) {
+                window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
+                window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
+                window.statusBarColor = 0xFFFFFFFF.toInt()
+            }
+        } else if (theme != null && theme.equals("neptunium")) {
+            actionBarColor = 0xFF4A90E2.toInt()
+            scannerView.setBorderColor(0xFF4A90E2.toInt())
+            actionBar.setBackgroundDrawable(ColorDrawable(0xFF080840.toInt()))
+            if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.M) {
+                scannerView.setSystemUiVisibility(0);
+            }
+            if (android.os.Build.VERSION.SDK_INT >= 21) {
+                window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
+                window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
+                window.statusBarColor = 0xFF080840.toInt()
+            }
+        } else if (theme != null && theme.equals("thorium")) {
+            actionBarColor = 0xFF75F3FF.toInt()
+            scannerView.setBorderColor(0xFF75F3FF.toInt())
+            actionBar.setBackgroundDrawable(ColorDrawable(0xFF2A1052.toInt()))
+            if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.M) {
+                scannerView.setSystemUiVisibility(0);
+            }
+            if (android.os.Build.VERSION.SDK_INT >= 21) {
+                window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
+                window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
+                window.statusBarColor = 0xFF2A1052.toInt()
+            }
+        }        
         setContentView(scannerView)
     }
 
