@@ -134,6 +134,7 @@
 }
 
 - (void)cancel {
+    [self.delegate barcodeScannerViewController:self didScanBarcodeWithResult:nil];
     [self dismissViewControllerAnimated:true completion:nil];
 }
 
